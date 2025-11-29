@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends, HTTPException
 from typing import List
-from crud import create_item, get_items, get_item, update_item, delete_item
-from models import Item
-from security import init_db, get_api_key
+from .crud import create_item, get_items, get_item, update_item, delete_item
+from .models import Item
+from .security import init_db, get_api_key
 
 app = FastAPI()
 
